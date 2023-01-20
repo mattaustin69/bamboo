@@ -32,13 +32,32 @@
     src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
+@font-face{
+    font-family: "IBM Plex Sans Regular";
+    src: url("../fonts/IBMPlexSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "IBM Plex Sans Bold";
+    src: url("../fonts/IBMPlexSans-Bold.ttf");
+}
+
 .h1-bamboo {
-    font-family: 'IBM Plex Sans Condensed';
+    font-family: 'Playfair Display';
     font-style: normal;
+    font-size: 105px;
     font-weight: 400;
     line-height: 1.4;
 }
-
+.body-regular {
+    font-family: 'IBM Plex Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #000000;
+}
 /*
 .h2 {
     font-family: var(--unnamed-font-family-playfair-display);
