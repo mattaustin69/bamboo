@@ -1,0 +1,93 @@
+:root {
+
+    /* Colors: */
+    --unnamed-color-deeaf4: #DEEAF4;
+    --unnamed-color-0e446d: #0E446D;
+    --unnamed-color-000000: #000000;
+
+    /* Font/text values */
+    --unnamed-font-family-ibm-plex-sans: IBM Plex Sans;
+    --unnamed-font-family-playfair-display: Playfair Display;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-font-size-58: 58px;
+    --unnamed-font-size-105: 105px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-20: 20px;
+    --unnamed-line-spacing-27: 27px;
+    --unnamed-line-spacing-40: 40px;
+    --unnamed-line-spacing-78: 78px;
+    --unnamed-line-spacing-140: 140px;
+}
+
+/* Character Styles */
+.h1 {
+    font-family: var(--unnamed-font-family-playfair-display);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-105);
+    line-height: var(--unnamed-line-spacing-140);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+}
+.h2 {
+    font-family: var(--unnamed-font-family-playfair-display);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-58);
+    line-height: var(--unnamed-line-spacing-78);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+}
+.h3 {
+    font-family: var(--unnamed-font-family-playfair-display);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-40);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+}
+.h4 {
+    font-family: var(--unnamed-font-family-playfair-display);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-27);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+}
+.body-bold {
+    font-family: var(--unnamed-font-family-ibm-plex-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-20);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+}
+.body-regular {
+    font-family: var(--unnamed-font-family-ibm-plex-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-20);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+}
+
+.wp-bamboo-cover{
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 780px;
+    background: transparent linear-gradient(180deg, var(--unnamed-color-0e446d) 0%, #135A90 70%, #0C548B 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #0E446D 0%, #135A90 70%, #0C548B 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.61;
+}
