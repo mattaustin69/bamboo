@@ -21,6 +21,12 @@ add_editor_style( 'style.css' );
 endif;
 add_action( 'after_setup_theme', 'bamboo_support' );
 
+function preload_fonts() {
+	echo '<link rel="stylesheet" id="ibm-css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" type="text/css/">' . PHP_EOL;
+	echo '<link rel="stylesheet" id="mayfair-css" href="https://fonts.googleapis.com/css?family=Playfair+Display" type="text/css/">';
+}
+add_action( 'wp_head','preload_fonts', 10);
+
 /*
  * Enqueue styles
  */
