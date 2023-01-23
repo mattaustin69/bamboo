@@ -1,4 +1,6 @@
 :root {
+    margin: 0;
+    padding: 0;
 
     /* Colors: */
     --unnamed-color-deeaf4: #DEEAF4;
@@ -6,7 +8,8 @@
     --unnamed-color-000000: #000000;
 
     /* Font/text values */
-    --unnamed-font-family-ibm-plex-sans: IBM Plex Sans Condensed;
+    --unnamed-font-family-ibm-plex-sans: IBM Plex Sans Regular;
+    --unnamed-font-family-ibm-plex-sans-bold: IBM Plex Sans Bold;
     --unnamed-font-family-playfair-display: Playfair Display;
     --unnamed-font-style-normal: normal;
     --unnamed-font-weight-600: 600px;
@@ -19,14 +22,13 @@
     --unnamed-font-size-58: 58px;
     --unnamed-font-size-105: 105px;
     --unnamed-character-spacing-0: 0px;
-    --unnamed-line-spacing-20: 20px;
-    --unnamed-line-spacing-27: 27px;
-    --unnamed-line-spacing-40: 40px;
-    --unnamed-line-spacing-78: 78px;
-    --unnamed-line-spacing-140: 140px;
+    --unnamed-line-spacing-20: 1;
+    --unnamed-line-spacing-27: 1.2;
+    --unnamed-line-spacing-40: 1.5;
+    --unnamed-line-spacing-78: 1.8;
+    --unnamed-line-spacing-140: 2;
 }
 
-/* Character Styles */
 @font-face{
     font-family: "Playfair Display";
     src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
@@ -42,24 +44,21 @@
     src: url("../fonts/IBMPlexSans-Bold.ttf");
 }
 
-.h1-bamboo {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-size: 105px;
-    font-weight: 400;
-    line-height: 1.4;
+/* Character Styles */
+.has-large-font-size {
+    font-size: var(--unnamed-font-size-105) !important;
+    color: #ffffff;
 }
-.body-regular {
-    font-family: 'IBM Plex Sans Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: 0;
-    color: #000000;
+h1 {
+    font-family: var(--unnamed-font-family-playfair-display);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-105);
+    line-height: var(--unnamed-line-spacing-20);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
 }
-/*
-.h2 {
+h2 {
     font-family: var(--unnamed-font-family-playfair-display);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
@@ -68,7 +67,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-000000);
 }
-.h3 {
+h3 {
     font-family: var(--unnamed-font-family-playfair-display);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-600);
@@ -77,7 +76,7 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-000000);
 }
-.h4 {
+h4 {
     font-family: var(--unnamed-font-family-playfair-display);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-medium);
@@ -87,7 +86,7 @@
     color: var(--unnamed-color-000000);
 }
 .body-bold {
-    font-family: var(--unnamed-font-family-ibm-plex-sans);
+    font-family: var(--unnamed-font-family-ibm-plex-sans-bold);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: var(--unnamed-font-size-16);
@@ -104,28 +103,135 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-000000);
 }
-.h1 {
-    font-family: var(--unnamed-font-family-playfair-display);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-105);
-    line-height: var(--unnamed-line-spacing-140);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: ffffff; var(--unnamed-color-000000);
-}
-*/
+
 .wp-bamboo-cover{
-    /*
     top: 0px;
     left: 0px;
     width: 1920px;
     height: 780px;
-    */
-
-    background: transparent linear-gradient(180deg, #0e446d 0%, #135A90 70%, #0C548B 100%) 0% 0% no-repeat padding-box;
-    /*
+    background: transparent linear-gradient(180deg, var(--unnamed-color-0e446d) 0%, #135A90 70%, #0C548B 100%) 0% 0% no-repeat padding-box;
     opacity: 0.61;
-    */
 }
 
-/* var(--unnamed-color-0e446d) */
+.img-right-1{
+    top: 813px;
+    left: 1202px;
+    width: 718px;
+    height: 598px;
+    background: transparent url('img/9afd0b1990174de6865c838faa49c408.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.img-left-2{
+    top: 1408px;
+    left: 0px;
+    width: 718px;
+    height: 520px;
+    background: transparent url('img/33ddc02d00238902ec27ef4dbac474ea.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.welcome-container{
+    top: 813px;
+    left: -18px;
+    width: 1952px;
+    height: 598px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.h2-welcome{
+    top: 953px;
+    left: 186px;
+    width: 792px;
+    height: 78px;
+    margin-left: 186px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-58)/var(--unnamed-line-spacing-78) var(--unnamed-font-family-playfair-display);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0e446d);
+    text-align: left;
+    font: normal normal bold 58px/78px Playfair Display;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 1;
+}
+.welcome-para{
+    top: 1071px;
+    left: 186px;
+    max-width: 616px;
+    min-height: 100px;
+    margin-left: 186px;
+    margin-right: 20px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-ibm-plex-sans);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0e446d);
+    text-align: left;
+    font: normal normal normal 16px/20px IBM Plex Sans Regular;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 1;
+}
+
+.investing-container{
+    top: 1409px;
+    left: 718px;
+    width: 1202px;
+    height: 407px;
+    background: var(--unnamed-color-deeaf4) 0% 0% no-repeat padding-box;
+    background: #DEEAF4 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.about-steven-container{
+    top: 1928px;
+    left: -4.9998779296875px;
+    width: 1925px;
+    height: 539px;
+    background: var(--unnamed-color-0e446d) 0% 0% no-repeat padding-box;
+    /* background: #0E446D 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+.about-steven-heading{
+    top: 2068px;
+    left: 692px;
+    width: 100%;
+    height: 78px;
+    text-align: center;
+    /* font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-58)/var(--unnamed-line-spacing-78) var(--unnamed-font-family-playfair-display);
+    letter-spacing: var(--unnamed-character-spacing-0); */
+    /*
+    font: normal normal medium 58px/78px Playfair Display;
+    letter-spacing: 0px;
+    */
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.about-steven-text{
+    top: 2186px;
+    left: 395px;
+    width: 1131px;
+    height: 57px;
+    margin-left: 186px;
+    margin-right: 20px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-ibm-plex-sans);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal normal 16px/20px IBM Plex Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.bamboo-latest-posts{
+
+}
+
+.white-logo{
+    /* Layout Properties */
+    top: 40px;
+    left: 186px;
+    width: 292px;
+    height: 72px;
+    /* UI Properties */
+    opacity: 1;
+}
