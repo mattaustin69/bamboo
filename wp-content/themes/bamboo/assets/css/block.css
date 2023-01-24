@@ -103,6 +103,20 @@ h4 {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-000000);
 }
+body{
+    max-width: 1920px;
+}
+
+.welcome-columns{
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+
+.investing-columns{
+    margin: 0;
+    padding: 0;
+}
 
 .wp-bamboo-cover{
     top: 0px;
@@ -114,27 +128,45 @@ h4 {
 }
 
 .img-right-1{
+    margin: 0;
+    padding: 0;
+    /*
     top: 813px;
     left: 1202px;
+    width: 100%; /* 718px; */
+    /* height: 598px; */
+    /*
+    background: transparent url('img/9afd0b1990174de6865c838faa49c408.png') 0% 0% no-repeat padding-box;
+    opacity: 1; */
+}
+.img-right-1 img{
     width: 718px;
     height: 598px;
-    background: transparent url('img/9afd0b1990174de6865c838faa49c408.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+    object-fit: cover;
 }
 
 .img-left-2{
+    margin: 0;
+    padding: 0;
+    /*
     top: 1408px;
     left: 0px;
     width: 718px;
     height: 520px;
     background: transparent url('img/33ddc02d00238902ec27ef4dbac474ea.png') 0% 0% no-repeat padding-box;
     opacity: 1;
+    */
+}
+.img-left-2 img{
+    width: 718px;
+    height: 520px;
+    object-fit: cover;
 }
 
 .welcome-container{
     top: 813px;
     left: -18px;
-    width: 1952px;
+    width: 100%; /* 1952px; */
     height: 598px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -173,19 +205,26 @@ h4 {
 }
 
 .investing-container{
+    /*
     top: 1409px;
     left: 718px;
     width: 1202px;
     height: 407px;
+        */
     background: var(--unnamed-color-deeaf4) 0% 0% no-repeat padding-box;
-    background: #DEEAF4 0% 0% no-repeat padding-box;
+    /* background: #DEEAF4 0% 0% no-repeat padding-box; */
     opacity: 1;
+
 }
 .about-steven-container{
+    /*
     top: 1928px;
     left: -4.9998779296875px;
+
+     */
     width: 1925px;
     height: 539px;
+
     background: var(--unnamed-color-0e446d) 0% 0% no-repeat padding-box;
     /* background: #0E446D 0% 0% no-repeat padding-box; */
     opacity: 1;
@@ -197,6 +236,7 @@ h4 {
     width: 100%;
     height: 78px;
     text-align: center;
+    margin-top: 140px;
     /* font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-58)/var(--unnamed-line-spacing-78) var(--unnamed-font-family-playfair-display);
     letter-spacing: var(--unnamed-character-spacing-0); */
     /*
@@ -208,27 +248,148 @@ h4 {
 }
 
 .about-steven-text{
+    /*
     top: 2186px;
     left: 395px;
+
+     */
     width: 1131px;
     height: 57px;
-    margin-left: 186px;
-    margin-right: 20px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-ibm-plex-sans);
-    letter-spacing: var(--unnamed-character-spacing-0);
+    margin: auto;
     text-align: center;
-    font: normal normal normal 16px/20px IBM Plex Sans;
+    font: normal normal normal 16px/20px IBM Plex Sans Regular;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
 }
-.bamboo-latest-posts{
 
+.find-out-more{
+    margin-top: 40px;
+    font: normal normal normal 16px/20px IBM Plex Sans Regular;
 }
 
+.featured-news-heading{
+    margin-top: 140px;
+    font: normal normal bold 58px/78px Playfair Display;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 1;
+}
+
+.latest-posts{
+    margin: auto;
+    width: 1464px;
+}
+
+.latest-posts li{
+    width: 448px;
+    border-top: 2px solid #0E446D;
+}
+
+.latest-posts li a{
+    text-align: left;
+    text-decoration: none;
+    font: normal normal 600 30px/40px Playfair Display;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 1;
+}
+.latest-posts li div{
+    text-align: left;
+    font: normal normal normal 16px/20px IBM Plex Sans;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 0.5;
+}
+.form-heading{
+    text-align: left;
+    font: normal normal bold 58px/78px Playfair Display;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 1;
+}
+.form-container{
+    /* Layout Properties */
+    top: 3233px;
+    left: 0px;
+    width: 100%;
+    height: 1022px;
+    /* UI Properties */
+    background: var(--unnamed-color-deeaf4) 0% 0% no-repeat padding-box;
+    /* background: #DEEAF4 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+.form-div{
+    padding-top: 140px;
+    margin: auto;
+    width: 1284px;
+}
+.form-row{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.inputx{
+    width: 100%;
+    height: 49px;
+    background: #cbdbe8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+}
+.agree{
+    width: 23px;
+    height: 23px;
+    /* UI Properties */
+    background: #EFEFF0 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+}
+.submit-enquiry{
+    font: normal normal bold 16px/20px IBM Plex Sans;
+    letter-spacing: 0px;
+    color: #0E446D;
+    text-transform: capitalize;
+    opacity: 1;
+}
+label{
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #0E446D;
+    opacity: 1;
+}
+.form-div input::placeholder {
+    color: #0E446D;
+    opacity: 0.8;
+}
+
+.form-div textarea{
+    width: 100%;
+    height: 207px;
+    background: #0E446D 0% 0% no-repeat padding-box;
+    opacity: 0.09;
+}
+.steven-wright-footer{
+    background: #0E446D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 1718px;
+    height: 207px;
+    padding-left: 186px;
+    padding-top: 60px;
+}
+.steven-wright-footer p{
+    text-align: left;
+    font: normal normal normal 16px/20px IBM Plex Sans Regular;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0 0 40px 0;
+    padding: 0;
+    width: 1094px;
+}
 .white-logo{
     /* Layout Properties */
-    top: 40px;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
     left: 186px;
     width: 292px;
     height: 72px;
